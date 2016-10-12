@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="utf-8"?>
+<shape xmlns:android="http://schemas.android.com/apk/res/android"
+    android:shape="rectangle">
+
+    <solid android:color="@color/colorAccent"></solid>
+    <size
+        android:width="100dp"
+        android:height="100dp"></size>
+
+    <corners android:radius="5dp"></corners>
+
+    <stroke
+        android:width="5dp"
+        android:color="@android:color/white"
+        android:dashGap="5dp"
+        android:dashWidth="5dp"></stroke>
+
+    <padding
+        android:bottom="5dp"
+        android:top="5dp"></padding>
+
+    <gradient
+        android:centerColor="@android:color/white"
+        android:endColor="@color/colorPrimaryDark"
+        android:startColor="@color/colorAccent"
+        android:type="linear"></gradient>
+
+
+</shape><!--
+solid->color填充色
+size->在使用该xml时，如果对应的控件宽度或高度是自适应的（不确定的），宽度高度才会启作用
+corners->圆角  radius代表四个角的半径都采用这个值， bottomLeftRadius左下角半径等等
+stroke->描边  width描边的宽度 color描边的颜色  dashGap虚线之间的间隔  dashWidth设置虚线的长度
+padding->内容与边缘的间距
+
+gradient->渐变
+-->

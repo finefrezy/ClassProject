@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="utf-8"?>
+<objectAnimator xmlns:android="http://schemas.android.com/apk/res/android"
+
+    android:propertyName="width"
+    android:duration="2000"
+    android:valueFrom="0.0"
+    android:valueTo="360.0"
+    android:valueType="floatType"
+    >
+
+</objectAnimator>
+
+<!-- Android系统也提供了View的一些属性和相应的setter和getter方法：
+
+    alpha：透明度，默认为1，表示不透明，0表示完全透明
+    pivotX 和 pivotY：旋转的轴点和缩放的基准点，默认是View的中心点
+    scaleX 和 scaleY：基于pivotX和pivotY的缩放，1表示无缩放，小于1表示收缩，大于1则放大
+    rotation、rotationX 和 rotationY：基于轴点(pivotX和pivotY)的旋转，rotation为平面的旋转，rotationX和rotationY为立体的旋转
+    translationX 和 translationY：View的屏幕位置坐标变化量，以layout容器的左上角为坐标原点
+    x 和 y：View在父容器内的最终位置，是左上角坐标和偏移量（translationX，translationY）的和-->

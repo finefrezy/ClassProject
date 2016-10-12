@@ -1,0 +1,209 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:scrollbars="none">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+
+        <Button
+            android:id="@+id/view_pager"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="@string/view_pager" />
+
+        <Button
+            android:id="@+id/drawer_layout"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="@string/draw_text" />
+
+        <Button
+            android:id="@+id/progress"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="@string/progress" />
+
+        <Button
+            android:id="@+id/dialog"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="@string/dialog" />
+
+        <Button
+            android:id="@+id/noti"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="@string/notification" />
+
+        <Button
+            android:id="@+id/navi_menu"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="@string/navi_menu" />
+
+        <Button
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="@string/navi_menu" />
+
+        <Button
+            android:id="@+id/popup"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="@string/popup" />
+
+        <Button
+            android:id="@+id/fragment"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="@string/fragment" />
+
+        <Button
+            android:id="@+id/home"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="@string/home" />
+
+        <Button
+            android:id="@+id/listview"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="@string/list_load" />
+
+        <Button
+            android:id="@+id/sharedpre"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="@string/shared" />
+
+        <Button
+            android:id="@+id/sqlite"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="@string/sqlite" />
+
+        <Button
+            android:id="@+id/broadcast"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="@string/broad" />
+
+        <Button
+            android:id="@+id/json"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="@string/json" />
+
+        <Button
+            android:id="@+id/network"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="@string/network" />
+
+        <Button
+            android:id="@+id/handler"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="@string/handler" />
+
+        <Button
+            android:id="@+id/net_frame"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="@string/net_frame" />
+
+        <Button
+            android:id="@+id/provider"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="@string/provider" />
+
+        <Button
+            android:id="@+id/service_btn"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="@string/service_btn" />
+
+        <Button
+            android:id="@+id/song"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="@string/song" />
+
+        <Button
+        android:id="@+id/anim"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="@string/anim" />
+
+        <Button
+            android:id="@+id/shape"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="@string/shape" />
+
+        <Button
+            android:id="@+id/canvas"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="@string/canvas" />
+        <Button
+            android:id="@+id/self_define_view"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="@string/self_define_view" />
+        <Button
+            android:id="@+id/event_dispatch"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="@string/event_dispatch" />
+
+        <Button
+            android:id="@+id/logistics"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="@string/logistics" />
+
+        <Button
+            android:id="@+id/beauty_title"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="@string/beauty_title" />
+
+        <Button
+            android:id="@+id/forum_layout"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="@string/forum_layout" />
+        <Button
+            android:id="@+id/palette"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="@string/palette" />
+        <Button
+            android:id="@+id/card_view"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="@string/card_view" />
+        <Button
+            android:id="@+id/recycler"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="@string/recycler" />
+        <Button
+            android:id="@+id/project"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="@string/project" />
+
+        <Button
+            android:id="@+id/bdmap"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="@string/bdmap" />
+    </LinearLayout>
+</ScrollView>

@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:orientation="vertical"
+    android:layout_height="match_parent">
+
+    <Button
+        android:id="@+id/content_add_btn"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="增加" />
+
+    <Button
+        android:id="@+id/content_delete_btn"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="删除" />
+
+    <Button
+        android:id="@+id/content_update_btn"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="修改" />
+
+    <Button
+        android:id="@+id/content_query_btn"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="查询" />
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/tv"/>
+</LinearLayout>

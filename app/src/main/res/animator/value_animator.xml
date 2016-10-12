@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="utf-8"?>
+<animator xmlns:android="http://schemas.android.com/apk/res/android"
+    android:duration="2000"
+    android:valueFrom="100"
+    android:valueTo="200"
+    android:valueType="intType"
+    >
+
+</animator>
+
+<!--
+
+    android:duration 动画从开始到结束持续的时长，单位为毫秒
+    android:startOffset 设置动画执行之前的等待时长，单位为毫秒
+    android:repeatCount 设置动画重复执行的次数，默认为0，即不重复；可设为-1或infinite，表示无限重复
+
+    android:repeatMode 设置动画重复执行的模式，可设为以下两个值其中之一：
+        restart 动画重复执行时从起点开始，默认为该值
+        reverse 动画会反方向执行
+
+    android:valueFrom 动画开始的值，可以为int值、float值或color值
+
+    android:valueTo 动画结束的值，可以为int值、float值或color值
+
+    android:valueType 动画值类型，若为color值，则无需设置该属性
+        intType 指定动画值，即以上两个value属性的值为整型
+        floatType 指定动画值，即以上两个value属性的值为浮点型，默认值
+
+    android:interpolator 设置动画速率的变化，比如加速、减速、匀速等，需要指定Interpolator资源。具体用法在View Animation篇已经讲过，这里不再重复
+-->

@@ -1,0 +1,59 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <attr name="textColor" format="color"></attr>
+    <attr name="backgroundColor" format="color"></attr>
+    <attr name="text" format="string"></attr>
+    <attr name="textSize" format="dimension"></attr>
+    
+    <declare-styleable name="RandomTextView">
+        <attr name="textColor"></attr>
+        <attr name="text"></attr>
+        <attr name="textSize"></attr>
+        <attr name="backgroundColor"></attr>
+    </declare-styleable>
+
+    <!--<declare-styleable name="CanvasClock">-->
+        <!--<attr name="textColor"></attr>-->
+        <!--<attr name="text"></attr>-->
+        <!--<attr name="textSize"></attr>-->
+
+    <!--</declare-styleable>-->
+
+    <declare-styleable name="PagerSlidingTabStrip">
+        <attr name="pstsIndicatorColor" format="color" />
+        <attr name="pstsUnderlineColor" format="color" />
+        <attr name="pstsDividerColor" format="color" />
+        <attr name="pstsIndicatorHeight" format="dimension" />
+        <attr name="pstsUnderlineHeight" format="dimension" />
+        <attr name="pstsDividerPadding" format="dimension" />
+        <attr name="pstsTabPaddingLeftRight" format="dimension" />
+        <attr name="pstsScrollOffset" format="dimension" />
+        <attr name="pstsTabBackground" format="reference" />
+        <attr name="pstsShouldExpand" format="boolean" />
+        <attr name="pstsTextAllCaps" format="boolean" />
+    </declare-styleable>
+    <declare-styleable name="ViewPagerIndicator">
+        <!-- Style of the circle indicator. -->
+        <attr name="vpiCirclePageIndicatorStyle" format="reference"/>
+        <!-- Style of the icon indicator's views. -->
+        <attr name="vpiIconPageIndicatorStyle" format="reference"/>
+        <!-- Style of the line indicator. -->
+        <attr name="vpiLinePageIndicatorStyle" format="reference"/>
+        <!-- Style of the title indicator. -->
+        <attr name="vpiTitlePageIndicatorStyle" format="reference"/>
+        <!-- Style of the tab indicator's tabs. -->
+        <attr name="vpiTabPageIndicatorStyle" format="reference"/>
+        <!-- Style of the underline indicator. -->
+        <attr name="vpiUnderlinePageIndicatorStyle" format="reference"/>
+    </declare-styleable>
+</resources>
+
+    <!--reference      资源类型，通常是@开头，例如@+id/xxxx，@id/xxxxx
+    string             字符串类型，通常是文字信息
+    dimension   浮点类型，通常是尺寸度量，单位有很多px，dp，sp，dip等
+    color             颜色类型，通常是颜色16进制代码，支持ARGB。
+    boolean       布尔类型，true和false
+    enum           枚举类型，通常是代表这个属性提供了几种值来进行选择，并且只能选择这几种中的一个
+    flag             与enum基本没有区别。
+    integer         整数类型，通常是整数 -->

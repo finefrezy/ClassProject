@@ -1,0 +1,64 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:clipChildren="false"
+    android:orientation="vertical">
+
+    <LinearLayout
+
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_weight="1.0"
+        android:orientation="vertical">
+
+        <com.elife.classproject.project.view.BanScrollViewPager
+            android:id="@+id/view_pager"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent" />
+    </LinearLayout>
+
+
+    <RadioGroup
+        android:id="@+id/main_rg"
+        android:layout_width="match_parent"
+        android:layout_height="55dp"
+        android:clipChildren="false"
+        android:orientation="horizontal"
+        android:weightSum="5">
+
+        <RadioButton
+            android:id="@+id/home"
+            style="@style/main_bottom_rb"
+            android:checked="true"
+            android:drawableTop="@drawable/sec_main_home"
+            android:text="@string/main_home"></RadioButton>
+
+        <RadioButton
+            android:id="@+id/discover"
+            style="@style/main_bottom_rb"
+            android:drawableTop="@drawable/sec_discover_home"
+            android:text="@string/main_discover"></RadioButton>
+
+        <RadioButton
+            android:id="@+id/shoppingcar"
+            style="@style/main_bottom_rb"
+            android:drawableBottom="@drawable/main_middle_icon"
+            android:paddingBottom="8dp"></RadioButton>
+
+        <RadioButton
+            android:id="@+id/my"
+            style="@style/main_bottom_rb"
+            android:drawableTop="@drawable/sec_my_home"
+            android:text="@string/main_my"></RadioButton>
+
+        <RadioButton
+            android:id="@+id/hobby"
+            style="@style/main_bottom_rb"
+            android:drawableTop="@drawable/sec_sq_home"
+            android:text="@string/main_hobby"></RadioButton>
+    </RadioGroup>
+
+</LinearLayout><!--- mdpi：320x480  60
+hdpi：480x800、480x854  3-4.5  90
+xhdpi：至少960*720
+xxhdpi：1280×720-->

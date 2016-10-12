@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+<RelativeLayout
+    android:layout_width="match_parent"
+    android:gravity="center_vertical"
+    android:background="@drawable/index_daily_ban2"
+    android:layout_height="150dp">
+
+    <ImageView
+        android:id="@+id/head_img"
+        android:layout_width="60dp"
+        android:layout_height="60dp"
+        android:layout_margin="8dp"
+        android:background="@drawable/lay_logo_weixin_big"
+        />
+
+    <TextView
+        android:id="@+id/name"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_toRightOf="@+id/head_img"
+        android:layout_marginTop="8dp"
+        android:textSize="25sp"
+        android:singleLine="true"
+        android:layout_marginRight="15dp"
+        android:textColor="@android:color/black"
+        android:text="@string/header_name"
+
+        />
+
+    <TextView
+        android:id="@+id/describe"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_toRightOf="@+id/head_img"
+        android:layout_below="@+id/name"
+        android:layout_marginTop="10dp"
+        android:singleLine="true"
+        android:textSize="15sp"
+        android:layout_marginRight="15dp"
+        android:textColor="@android:color/darker_gray"
+        android:text="@string/header_desc"
+        />
+</RelativeLayout>
+</RelativeLayout>

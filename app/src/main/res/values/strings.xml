@@ -1,0 +1,77 @@
+<resources>
+    <string name="app_name">ClassProject</string>
+    <string name="login">登录</string>
+    <string name="jump_data">通过跳转-回调获取值</string>
+    <string name="show_data">显示回调的值</string>
+    <string name="edit_hint">请输入值</string>
+    <string name="confirm_input">确认输入</string>
+    <string name="view_pager">ViewPager-引导页</string>
+    <string name="jump_next">跳过</string>
+    <string name="draw_text">抽屉-侧滑菜单</string>
+    <string name="header_name">张飞</string>
+    <string name="header_desc">杨柳岸，晓风残月。此去经年，应是良辰好景虚设。便纵有千种风情，待与何人说</string>
+    <string name="progress">进度条</string>
+    <string name="dialog">对话框</string>
+    <string name="notification">通知栏</string>
+    <string name="cancel">取消</string>
+    <string name="navi_menu">导航栏</string>
+    <string name="navi_search">搜索</string>
+    <string name="navi_share">分享</string>
+    <string name="popup">浮动框</string>
+    <string name="fragment">碎片化界面</string>
+    <string name="home">主页</string>
+    <string name="discover">发现</string>
+    <string name="contact">联系人</string>
+    <string name="my">我的</string>
+    <string name="shared">偏好设置</string>
+    <string name="sqlite">数据存储sqlite</string>
+    <string name="broad">自定义广播</string>
+    <string name="json">JSON</string>
+    <string name="network">网络编程</string>
+    <string name="handler">HANDLER</string>
+    <string name="net_frame">网络框架</string>
+    <string name="provider">ContentProvider</string>
+    <string name="service_btn">服务</string>
+    <string name="song">音乐播放器</string>
+    <string name="anim">动画</string>
+    <string name="shape">Shape</string>
+    <string name="canvas">Canvas</string>
+    <string name="self_define_view">自定义视图</string>
+    <string name="event_dispatch">事件分发</string>
+    <string name="logistics">快递UI</string>
+    <string name="beauty_title">TOOLBAR</string>
+    <string name="forum_layout">模仿微博布局</string>
+    <string name="palette">palette</string>
+    <string name="card_view">cardview</string>
+    <string name="recycler">recycler</string>
+    <string name="project">项目</string>
+    <string name="bdmap">百度地图</string>
+
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+
+
+    <string name="list_load">下拉刷新/上拉加载</string>
+    <string name="header_hint_normal">下拉刷新</string>
+    <string name="header_hint_ready">松开刷新数据</string>
+    <string name="header_hint_loading">正在加载...</string>
+    <string name="header_last_time">上次更新时间：</string>
+    <string name="footer_hint_normal">查看更多</string>
+    <string name="footer_hint_ready">松开载入更多</string>
+    <string name="title_activity_broad">BroadActivity</string>
+
+    <string name="text">红豆生南国，\n春来发几枝。愿君多采撷，\n此物最相思。</string>
+
+
+    <string name="title_activity_forum">ForumActivity</string>
+
+    <string name="drawer_open">打开</string>
+    <string name="drawer_close">关闭</string>
+
+    <string name="main_home">首页</string>
+    <string name="main_discover">发现</string>
+    <string name="main_my">我的</string>
+    <string name="main_hobby">食趣</string>
+
+
+</resources>

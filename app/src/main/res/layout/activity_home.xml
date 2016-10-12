@@ -1,0 +1,62 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+
+
+    <RadioGroup
+        android:id="@+id/bottom_rg"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:layout_alignParentBottom="true"
+        android:orientation="horizontal"
+
+        android:weightSum="4">
+
+        <RadioButton
+            android:id="@+id/home"
+            style="@style/menu_bottom"
+            android:checked="true"
+            android:text="@string/home"
+            android:drawableTop="@drawable/home_selector" />
+
+
+        <RadioButton
+            android:id="@+id/discover"
+            style="@style/menu_bottom"
+            android:checked="true"
+            android:text="@string/discover"
+            android:drawableTop="@drawable/toptab_icn_delete"  />
+
+        <RadioButton
+            android:id="@+id/contact"
+            style="@style/menu_bottom"
+            android:checked="true"
+            android:text="@string/contact"
+            android:drawableTop="@drawable/toptab_icn_delete"  />
+
+        <RadioButton
+            android:id="@+id/my"
+            style="@style/menu_bottom"
+            android:checked="true"
+            android:text="@string/my"
+            android:drawableTop="@drawable/toptab_icn_delete"  />
+    </RadioGroup>
+    <ImageView
+        android:id="@+id/line"
+        android:layout_width="match_parent"
+        android:layout_height="1sp"
+        android:background="@android:color/darker_gray"
+        android:layout_above="@+id/bottom_rg"
+        />
+
+    <com.elife.classproject.base.Mvp
+        android:id="@+id/top_vp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_above="@+id/line">
+
+    </com.elife.classproject.base.Mvp>
+
+</RelativeLayout>

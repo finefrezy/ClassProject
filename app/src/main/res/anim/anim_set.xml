@@ -1,0 +1,93 @@
+<?xml version="1.0" encoding="utf-8"?>
+<set xmlns:android="http://schemas.android.com/apk/res/android"
+    android:interpolator="@anim/self_interpolator"
+    android:shareInterpolator="true"
+    >
+    <translate
+        android:duration="2000"
+        android:fromXDelta="0"
+        android:fromYDelta="0"
+        android:toXDelta="100"
+        android:toYDelta="100"></translate>
+
+    <scale
+        android:startOffset="2000"
+        android:duration="2000"
+        android:fromXScale="1.0"
+        android:fromYScale="1.0"
+        android:pivotX="50%"
+        android:pivotY="50%"
+        android:toXScale="2.0"
+        android:toYScale="2.0"></scale>
+
+
+    <!--<alpha-->
+        <!--android:duration="2000"-->
+        <!--android:fromAlpha="1.0"-->
+        <!--android:toAlpha="0.0"-->
+        <!--&gt;</alpha>-->
+
+
+    <!--<rotate-->
+    <!--android:startOffset="4000"-->
+    <!--android:interpolator="@anim/self_interpolator"-->
+    <!--android:duration="1000"-->
+    <!--android:fromDegrees="0"-->
+    <!--android:toDegrees="360"-->
+    <!--android:pivotX="50%"-->
+    <!--android:pivotY="50%"-->
+    <!--android:repeatCount="1"-->
+    <!--&gt;-->
+
+
+<!--</rotate>-->
+
+    <scale
+        android:startOffset="4000"
+        android:duration="2000"
+        android:fromXScale="1.0"
+        android:fromYScale="1.0"
+        android:pivotX="50%"
+        android:pivotY="50%"
+        android:toXScale="0.5"
+        android:toYScale="0.5"></scale>
+
+
+    <translate
+        android:startOffset="6000"
+        android:duration="2000"
+        android:fromXDelta="0"
+        android:fromYDelta="0"
+        android:toXDelta="-100"
+        android:toYDelta="-100"></translate>
+
+
+</set>
+
+<!--
+
+连续的动画动作是相对于之前的动画
+
+补间动画只能作用于View，而且视图（补间）动画改变的只是View的绘制效果，View真正的属性并没有改变。比如，一个按钮做平移的动画，虽然按钮的确做了平移，但按钮可点击的区域并没随着平移而改变，还是在原来的位置
+
+    android:duration 动画从开始到结束持续的时长，单位为毫秒
+    android:detachWallpaper 设置是否在壁纸上运行，只对设置了壁纸背景的窗口动画(window animation)有效。设为true，则动画只在窗口运行，壁纸背景保持不变
+    android:fillAfter 设置为true时，动画执行完后，View会停留在动画的最后一帧；默认为false；如果是动画集，需在<set>标签中设置该属性才有效
+android:fillBefore 设置为true时，动画执行完后，View回到动画执行前的状态，默认即为true
+android:fillEnabled 设置为true时，android:fillBefore的值才有效，否则android:fillBefore会被忽略
+android:repeatCount 设置动画重复执行的次数，默认为0，即不重复；可设为-1或infinite，表示无限重复
+
+android:repeatMode 设置动画重复执行的模式，可设为以下两个值其中之一：
+restart 动画重复执行时从起点开始，默认为该值
+reverse 动画会反方向执行
+
+android:startOffset 设置动画执行之前的等待时长，毫秒为单位；重复执行时，每次执行前同样也会等待一段时间
+
+android:zAdjustment 表示被设置动画的内容在动画运行时在Z轴上的位置，取值为以下三个值之一：
+normal 默认值，保持内容在Z轴上的位置不变
+top 保持在Z周最上层
+bottom 保持在Z轴最下层
+
+android:interpolator 设置动画速率的变化，比如加速、减速、匀速等，需要指定Interpolator资源，后面再详细讲解
+PS：<set>标签还有个android:shareInterpolator属性，设置为true时则可将interpolator应用到所有子元素中
+-->

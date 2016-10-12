@@ -1,0 +1,54 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="70dp">
+
+    <RelativeLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_margin="10dp"
+       >
+        <ImageView
+            android:id="@+id/good_photo"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginRight="10dp"
+            android:background="@drawable/recommend_icn_birthday_prs"
+            />
+
+        <TextView
+            android:id="@+id/good_name"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="name"
+            android:layout_toRightOf="@+id/good_photo"
+            />
+
+        <TextView
+            android:id="@+id/price"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="￥90.00"
+            android:layout_marginTop="15dp"
+
+            android:layout_toRightOf="@+id/good_photo"
+            android:layout_below="@+id/good_name"
+            />
+
+        <TextView
+            android:id="@+id/post_fee"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/good_name"
+            android:layout_alignParentRight="true"
+            android:text="免运费"
+            android:src="@drawable/btmlay_icn_praise"/>
+    </RelativeLayout>
+
+
+
+
+
+
+
+</RelativeLayout>

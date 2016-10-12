@@ -1,0 +1,188 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.elife.classproject">
+
+    <uses-permission android:name="android.permission.INTERNET" />
+    <uses-permission android:name="android.permission.CALL_PHONE" />
+    <uses-permission android:name="android.permission.INTERNET" />
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" />
+    <uses-permission android:name="android.permission.READ_EXTERNAL_STORAGE" />
+    <uses-permission android:name="com.android.launcher.permission.READ_SETTINGS" />
+    <!-- 这个权限用于进行网络定位 -->
+    <uses-permission android:name="android.permission.ACCESS_COARSE_LOCATION" />
+    <!-- 这个权限用于访问GPS定位 -->
+    <uses-permission android:name="android.permission.ACCESS_FINE_LOCATION" />
+    <!-- 用于访问wifi网络信息，wifi信息会用于进行网络定位 -->
+    <uses-permission android:name="android.permission.ACCESS_WIFI_STATE" />
+    <!-- 获取运营商信息，用于支持提供运营商信息相关的接口 -->
+    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
+    <!-- 用于读取手机当前的状态 -->
+    <uses-permission android:name="android.permission.READ_PHONE_STATE" />
+    <!-- 写入扩展存储，向扩展卡写入数据，用于写入离线定位数据 -->
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" />
+
+    <supports-screens
+        android:anyDensity="true"
+        android:largeScreens="true"
+        android:normalScreens="false"
+        android:resizeable="true"
+        android:smallScreens="true" />
+
+    <application
+        android:name=".application.MyApplication"
+        android:allowBackup="true"
+        android:icon="@mipmap/ic_launcher"
+        android:label="@string/app_name"
+        android:supportsRtl="true"
+        android:theme="@style/AppTheme">
+        <activity
+            android:name=".MainActivity"
+            android:screenOrientation="portrait">
+            <intent-filter>
+                <action android:name="com.elife.classproject.Main" />
+
+                <category android:name="android.intent.category.DEFAULT" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name=".LoginActivity"
+            android:label="@string/login" />
+        <activity
+            android:name=".SaveInstanceStateActivity"
+            android:configChanges="orientation|screenSize">
+
+            <!--  -->
+
+        </activity>
+        <activity android:name=".FirstActivity" />
+        <activity android:name=".SecondActivity" />
+        <activity
+            android:name=".launchmode.Stanardctivity"
+            android:launchMode="singleTop" />
+        <activity android:name=".launchmode.SingleActivity" />
+        <activity android:name=".list.ListDemoActivity" />
+        <activity android:name=".drawer.DrawerActivity" />
+        <activity
+            android:name=".AllClassActivity"
+            android:launchMode="singleTask">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name=".vp.VpActivity"
+            android:theme="@style/Theme.AppCompat.DayNight.NoActionBar" />
+        <activity android:name=".ProgressActivity" />
+        <activity android:name=".dialog.AlertDialgActivity" />
+        <activity android:name=".notification.NotificationActivity" />
+        <activity
+            android:name=".MenuActivity"
+            android:label="@string/navi_menu" />
+        <activity android:name=".popup.PopupActivity" />
+        <activity android:name=".fragment.FragActivity" />
+        <activity android:name=".composite.HomeActivity" />
+        <activity android:name=".list.RLListViewActivity" />
+        <activity android:name=".SqliteActivity" />
+
+        <receiver android:name=".broadcast.BcReceiver">
+            <intent-filter>
+                <action android:name="android.intent.action.TIME_TICK" />
+            </intent-filter>
+            <intent-filter>
+                <action android:name="android.intent.action.PACKAGE_ADDED" />
+                <action android:name="android.intent.action.PACKAGE_REMOVED" />
+
+                <data android:scheme="package" />
+                <!-- 注意！！ 这句必须要加，否则接收不到BroadCast -->
+            </intent-filter>
+        </receiver>
+
+        <activity
+            android:name=".broadcast.BroadActivity"
+            android:label="@string/title_activity_broad"
+            android:theme="@style/AppTheme.NoActionBar" />
+        <activity android:name=".JsonActivity" />
+        <activity android:name=".network.NetworkActivity" />
+        <activity android:name=".network.ShowDataActivity" />
+        <activity android:name=".network.HandlerActivity" />
+        <activity android:name=".network.GoodActivity" />
+        <activity android:name=".netframe.RetrofitActivity" />
+
+        <provider
+            android:name=".contentprovider.MyContentProvider"
+            android:authorities="com.elife.classproject"
+            android:exported="true" />
+        <!-- 将contentprovider暴露出去，供其他应用访问 -->
+        <!-- authorities配置域名 -->
+
+        <activity android:name=".contentprovider.VisitCvActivity" />
+        <activity android:name=".broadcast.BroadcastActivity" />
+
+        <receiver android:name=".broadcast.TestReceiver">
+            <intent-filter>
+                <action android:name="android.intent.action.TIME_SET" />
+                <action android:name="com.elife.classproject.SELF_BROADCAST" />
+            </intent-filter>
+        </receiver>
+
+        <service android:name=".service.MService" />
+
+        <activity android:name=".service.ServiceActivity" />
+        <activity android:name=".service.Service2Activity" />
+
+        <service android:name=".service.BindService" />
+
+        <activity android:name=".service.BindServiceActivity" />
+        <activity android:name=".player.SongListActivity" />
+
+        <service
+            android:name=".service.MyIntentService"
+            android:exported="false" />
+        <service android:name=".player.MusicService" />
+
+        <activity android:name=".player.PlayActivity" />
+        <activity android:name=".anim.AnimActivity" />
+        <activity android:name=".shape.ShapeActivity" />
+        <activity android:name=".canvas.CanvasActivity" />
+        <activity android:name=".eventinter.EventActivity" />
+        <activity android:name=".baseview.BaseViewTestActivity" />
+        <activity android:name=".logistics.LogisticsActivity" />
+        <activity
+            android:name=".beautytitle.BeautyActivity"
+            android:theme="@style/BeautyTheme" />
+        <activity android:name=".forum.ForumActivity" />
+        <activity android:name=".palette.PaletteActivity" />
+        <activity android:name=".cardview.CardViewActivity" />
+        <activity android:name=".recycler.ForumMsgActivity" />
+        <activity android:name=".recycler.ForumWaterActivity" />
+        <activity android:name=".recycler.waterfall.WaterFallActivity" />
+        <activity
+            android:name=".project.ProjectActivity"
+            android:theme="@style/BeautyTheme" />
+
+        <meta-data
+            android:name="com.baidu.lbsapi.API_KEY"
+            android:value="lbIxGW6ZEKVzO6uGZ0SAilo94G5yUTdP" />
+
+        <activity android:name=".map.MapActivity" />
+
+        <service
+            android:name=".aidl.BankService"
+            android:enabled="false"
+            android:exported="false" />
+
+        <activity android:name=".aidl.BankActivity"
+
+            >
+
+            <intent-filter>
+                <action android:name="com.elife.classproject.aidl.BankService" />
+
+            </intent-filter>
+
+        </activity>
+    </application>
+
+</manifest>

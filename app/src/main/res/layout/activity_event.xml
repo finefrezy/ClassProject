@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.elife.classproject.eventinter.MyRelative xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+   >
+    <com.elife.classproject.eventinter.MyLinear1
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        >
+        <com.elife.classproject.eventinter.MyLinear2
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical"
+            >
+
+            <com.elife.classproject.eventinter.MyTextView
+                android:id="@+id/text"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="测试点击事件问题"
+                />
+        </com.elife.classproject.eventinter.MyLinear2>
+
+
+    </com.elife.classproject.eventinter.MyLinear1>
+
+</com.elife.classproject.eventinter.MyRelative>

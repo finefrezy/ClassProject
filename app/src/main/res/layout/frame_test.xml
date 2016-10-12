@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent" android:layout_height="match_parent">
+
+    <EditText
+        android:id="@+id/username"
+        style="@style/edit_sty"
+
+        />
+
+    <EditText
+        android:id="@+id/password"
+        style="@style/edit_sty"
+        android:layout_marginTop="90dp"
+        android:inputType="textPassword" />
+
+
+    <Button
+        android:id="@+id/login"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:layout_marginLeft="10dp"
+        android:layout_marginTop="160dp"
+        android:layout_marginRight="10dp"
+        android:background="@drawable/login_btn"
+        android:text="登录"
+        android:textColor="@android:color/white"
+        android:textSize="25dp" />
+</FrameLayout>

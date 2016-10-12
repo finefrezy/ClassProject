@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="colorPrimary">#3F51B5</color>
+    <color name="colorPrimaryDark">#303F9F</color>
+    <color name="colorAccent">#FF4081</color>
+    
+    <color name="color_cholo">#5C3317</color>
+
+    <color name="point_green">#4ECC80</color>
+    <color name="point_alpha_green">#884ECC80</color>
+    <color name="point_gray">#d8d8d8</color>
+    <color name="point_dark_gray">#999999</color>
+
+    <color name="background_tab_pressed">#6633B5E5</color>
+
+    <color name="red">#ff0000</color>
+    <color name="blue">#0000ff</color>
+    <color name="green">#00ff00</color>
+
+    <color name="menu_item_text_color">#E60200</color>
+</resources>

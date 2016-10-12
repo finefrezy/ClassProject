@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:ttt="http://schemas.android.com/apk/res-auto">
+    <!--always总显示 never不显示（点击可查看） ifRoom（显示与不显示之间由系统决定）-->
+
+    <item
+        android:id="@+id/share"
+        android:icon="@drawable/live_head_passerby"
+        ttt:showAsAction="ifRoom"
+        android:title="@string/navi_share"></item>
+    <item
+        android:id="@+id/search"
+        android:icon="@drawable/live_head_passerby"
+        ttt:showAsAction="ifRoom"
+        android:title="@string/navi_search"></item>
+    <item
+        android:id="@+id/searchs"
+        android:icon="@drawable/live_head_passerby"
+        ttt:showAsAction="ifRoom"
+        android:title="@string/navi_search"></item>
+</menu>
