@@ -170,17 +170,20 @@
 
         <service
             android:name=".aidl.BankService"
-            android:enabled="false"
-            android:exported="false" />
-
-        <activity android:name=".aidl.BankActivity"
-
+            android:process="com.elife.aidl.BankService"
             >
 
             <intent-filter>
                 <action android:name="com.elife.classproject.aidl.BankService" />
 
             </intent-filter>
+        </service>
+
+        <activity android:name=".aidl.BankActivity"
+
+            >
+
+
 
         </activity>
     </application>

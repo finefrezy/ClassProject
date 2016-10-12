@@ -7,6 +7,7 @@ import android.support.v7.app.AppCompatActivity;
 import android.view.View;
 import android.widget.Button;
 
+import com.elife.classproject.aidl.BankActivity;
 import com.elife.classproject.anim.AnimActivity;
 import com.elife.classproject.baseview.BaseViewTestActivity;
 import com.elife.classproject.beautytitle.BeautyActivity;
@@ -74,6 +75,7 @@ public class AllClassActivity extends AppCompatActivity implements View.OnClickL
     private Button mRecycler;
     private Button mProject;
     private Button mBdMap;
+    private Button mAidl;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -114,6 +116,7 @@ public class AllClassActivity extends AppCompatActivity implements View.OnClickL
         mRecycler = (Button) findViewById(R.id.recycler);
         mProject = (Button) findViewById(R.id.project);
         mBdMap = (Button) findViewById(R.id.bdmap);
+        mAidl = (Button) findViewById(R.id.aidl);
 
         mBtnVp.setOnClickListener(this);
         mList.setOnClickListener(this);
@@ -149,6 +152,7 @@ public class AllClassActivity extends AppCompatActivity implements View.OnClickL
         mRecycler.setOnClickListener(this);
         mProject.setOnClickListener(this);
         mBdMap.setOnClickListener(this);
+        mAidl.setOnClickListener(this);
 
 
         //生成广播处理
@@ -267,6 +271,9 @@ public class AllClassActivity extends AppCompatActivity implements View.OnClickL
                 break;
             case R.id.bdmap:
                 intent.setClass(getApplicationContext(), MapActivity.class);
+                break;
+            case R.id.aidl:
+                intent.setClass(getApplicationContext(), BankActivity.class);
                 break;
         }
 

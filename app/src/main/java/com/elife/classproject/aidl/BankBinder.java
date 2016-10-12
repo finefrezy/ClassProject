@@ -1,13 +1,12 @@
 package com.elife.classproject.aidl;
 
-import android.os.Binder;
-
 import java.util.UUID;
 
 /**
  * Created by tzhang on 2016/10/11.
+ * 服务端
  */
-public class BankBinder extends Binder implements IBank{
+public class BankBinder extends IBankAidl.Stub{
 
     @Override
     public String openAccount(String name, String pwd) {

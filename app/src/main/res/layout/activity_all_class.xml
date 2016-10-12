@@ -205,5 +205,11 @@
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:text="@string/bdmap" />
+
+        <Button
+            android:id="@+id/aidl"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="@string/aidl" />
     </LinearLayout>
 </ScrollView>

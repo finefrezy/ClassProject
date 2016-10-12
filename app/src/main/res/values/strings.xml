@@ -72,6 +72,9 @@
     <string name="main_discover">发现</string>
     <string name="main_my">我的</string>
     <string name="main_hobby">食趣</string>
+    <string name="aidl">AIDL</string>
+    <string name="open">开户</string>
+    <string name="close">销户</string>
 
 
 </resources>
