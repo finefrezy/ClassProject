@@ -37,6 +37,7 @@ public class BankActivity extends AppCompatActivity {
     // 显示处理结果
     private TextView mTxView;
 
+
     private Button mBtnOpen;
     private Button mBtnClose;
 

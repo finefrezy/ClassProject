@@ -36,6 +36,7 @@ import com.elife.classproject.project.ProjectActivity;
 import com.elife.classproject.recycler.ForumWaterActivity;
 import com.elife.classproject.service.BindServiceActivity;
 import com.elife.classproject.shape.ShapeActivity;
+import com.elife.classproject.viewinject.InjectTestActivity;
 import com.elife.classproject.vp.VpActivity;
 
 public class AllClassActivity extends AppCompatActivity implements View.OnClickListener {
@@ -76,6 +77,7 @@ public class AllClassActivity extends AppCompatActivity implements View.OnClickL
     private Button mProject;
     private Button mBdMap;
     private Button mAidl;
+    private Button mInject;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -106,6 +108,7 @@ public class AllClassActivity extends AppCompatActivity implements View.OnClickL
         mShape = (Button) findViewById(R.id.shape);
         mCanvas = (Button) findViewById(R.id.canvas);
         mLogistics = (Button) findViewById(R.id.logistics);
+        mInject = (Button) findViewById(R.id.inject);
 
         mDefineView = (Button) findViewById(R.id.self_define_view);
         mEventDispatch = (Button) findViewById(R.id.event_dispatch);
@@ -153,6 +156,7 @@ public class AllClassActivity extends AppCompatActivity implements View.OnClickL
         mProject.setOnClickListener(this);
         mBdMap.setOnClickListener(this);
         mAidl.setOnClickListener(this);
+        mInject.setOnClickListener(this);
 
 
         //生成广播处理
@@ -274,6 +278,9 @@ public class AllClassActivity extends AppCompatActivity implements View.OnClickL
                 break;
             case R.id.aidl:
                 intent.setClass(getApplicationContext(), BankActivity.class);
+                break;
+            case R.id.inject:
+                intent.setClass(getApplicationContext(), InjectTestActivity.class);
                 break;
         }
 

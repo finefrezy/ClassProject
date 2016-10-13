@@ -170,22 +170,14 @@
 
         <service
             android:name=".aidl.BankService"
-            android:process="com.elife.aidl.BankService"
-            >
-
+            android:process="com.elife.aidl.BankService">
             <intent-filter>
                 <action android:name="com.elife.classproject.aidl.BankService" />
-
             </intent-filter>
         </service>
 
-        <activity android:name=".aidl.BankActivity"
-
-            >
-
-
-
-        </activity>
+        <activity android:name=".aidl.BankActivity"></activity>
+        <activity android:name=".viewinject.InjectTestActivity"></activity>
     </application>
 
 </manifest>
