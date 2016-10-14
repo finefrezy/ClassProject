@@ -74,12 +74,15 @@ public class RetrofitActivity extends AppCompatActivity implements View.OnClickL
 //                RetrofitManager.formLogin("110","123456");
 //                RetrofitManager.upPhoto();
                 List<File> list = new ArrayList<File>();
+                // SD卡的Pictures目录，    参数为图片路径
                 File file = new File( Environment.getExternalStoragePublicDirectory(Environment.DIRECTORY_PICTURES), "wel_img_one.png");
                 list.add(file);
                 File file1 = new File( Environment.getExternalStoragePublicDirectory(Environment.DIRECTORY_PICTURES), "clock_pic_secretary.jpg");
                 list.add(file1);
                 File file2 = new File( Environment.getExternalStoragePublicDirectory(Environment.DIRECTORY_PICTURES), "msg_icn_daren.png");
                 list.add(file2);
+                // userId,  who,   content   img
+
                 RetrofitManager.uploadFile(list, "110", "图片上传");
 
                 break;

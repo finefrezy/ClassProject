@@ -235,7 +235,9 @@ public class RetrofitManager {
      * @return
      */
     private static List<MultipartBody.Part> filesToMultipartBodyParts(List<File> files) {
+        // 给集合一个初始容量
         List<MultipartBody.Part> parts = new ArrayList<>(files.size());
+
         for (File file : files) {
             // TODO: 16-4-2  这里为了简单起见，没有判断file的类型
             RequestBody requestBody = RequestBody.create(MediaType.parse("image/png"), file);
@@ -252,16 +254,15 @@ public class RetrofitManager {
      * @param userId
      * @param info
      */
-
-
     public static void uploadFile(List<File> files, String userId, String info) {
         RetrofitService retrofitService = RetrofitClient.getClient();
+
         Call<BaseResponse<String>> call = retrofitService.uploadFilesWithParts("mfs", filesToMultipartBodyParts(files), userId, info);
 
         call.enqueue(new Callback<BaseResponse<String>>() {
             @Override
             public void onResponse(Call<BaseResponse<String>> call, Response<BaseResponse<String>> response) {
-                if (response.isSuccessful()) {
+                if (response.isSuccessful()) {// 200开头
                     Log.e("RetrofitManager", "succ---uploadFile = " + response.body().msg);
                 } else {
                     Log.e("RetrofitManager", "fail---uploadFile = " + response.code());
