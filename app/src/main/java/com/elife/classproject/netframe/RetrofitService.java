@@ -6,6 +6,7 @@ import com.elife.classproject.network.UserModel;
 import java.util.List;
 import java.util.Map;
 
+import okhttp3.MultipartBody;
 import okhttp3.RequestBody;
 import okhttp3.ResponseBody;
 import retrofit2.Call;
@@ -37,7 +38,7 @@ public interface RetrofitService {
 
 
     @GET("/elife/{link}")
-    Call<UserModel> loginMap(@Path("link") String link, @QueryMap Map<String,String> map);
+    Call<UserModel> loginMap(@Path("link") String link, @QueryMap Map<String, String> map);
 
     @POST("/elife/{link}?userphone=110&password=123456")
     Call<UserModel> postObject(@Path("link") String link, @Body GoodModel goodModel);
@@ -79,4 +80,31 @@ public interface RetrofitService {
     // be called on the value, and the result used.
     @GET("/rongserver/{link}")
     Call<ResponseBody> changeHeader(@Path("link") String link, @Header("User-Agent") String agent);
+
+    /**
+     * @retrofit2.http.Multipart: 标记一个请求是multipart/form-data类型,需要和@retrofit2.http.POST一同使用，
+     * 并且方法参数必须是@retrofit2.http.Part注解
+     * @retrofit2.http.Part: 代表Multipart里的一项数据,即用${bound}分隔的内容块
+     *
+     * 使用@Multipart注解方法，并用@Part注解方法参数，类型是List< okhttp3.MultipartBody.Part>
+     *
+     * 通过 List<MultipartBody.Part> 传入多个part实现多文件上传
+     * @param parts 每个part代表一个文件
+     * @return 状态信息
+     */
+    @Multipart
+    @POST("/elife/{link}")
+    Call<BaseResponse<String>> uploadFilesWithParts(@Path("link") String link, @Part() List<MultipartBody.Part> parts, @Query("userid") String id, @Query("info") String info);
+
+    /**
+     * okhttp3.MultipartBody: multipart/form-data的抽象封装,继承okhttp3.RequestBody
+     okhttp3.MultipartBody.Part: multipart/form-data里的一项数据
+     * 不使用@Multipart注解方法，直接使用@Body注解方法参数，类型是okhttp3.MultipartBody
+     *
+     * 通过 MultipartBody和@body作为参数来上传
+     * @param multipartBody MultipartBody包含多个Part
+     * @return 状态信息
+     */
+    @POST("/elife/{link}")
+    Call<BaseResponse<String>> uploadFileWithRequestBody(@Path("link") String link, @Body MultipartBody multipartBody);
 }

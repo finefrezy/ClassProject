@@ -1,6 +1,7 @@
 package com.elife.classproject.netframe;
 
 import android.os.Bundle;
+import android.os.Environment;
 import android.os.Handler;
 import android.os.Message;
 import android.support.v7.app.AppCompatActivity;
@@ -11,6 +12,8 @@ import android.widget.ListView;
 import com.elife.classproject.R;
 import com.elife.classproject.network.GoodModel;
 
+import java.io.File;
+import java.util.ArrayList;
 import java.util.List;
 
 import retrofit2.Call;
@@ -24,13 +27,13 @@ public class RetrofitActivity extends AppCompatActivity implements View.OnClickL
     private List<GoodModel> mGoodModelList;
 
 
-    private Handler mHandler = new Handler(){
+    private Handler mHandler = new Handler() {
         @Override
         public void handleMessage(Message msg) {
             super.handleMessage(msg);
 
 
-            switch(msg.what) {
+            switch (msg.what) {
                 case 0:
                     mGoodModelList = (List<GoodModel>) msg.obj;
                     setData();
@@ -39,6 +42,7 @@ public class RetrofitActivity extends AppCompatActivity implements View.OnClickL
 
         }
     };
+
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
@@ -68,7 +72,15 @@ public class RetrofitActivity extends AppCompatActivity implements View.OnClickL
 //                RetrofitManager.postObject(goodModel);
 
 //                RetrofitManager.formLogin("110","123456");
-                RetrofitManager.upPhoto();
+//                RetrofitManager.upPhoto();
+                List<File> list = new ArrayList<File>();
+                File file = new File( Environment.getExternalStoragePublicDirectory(Environment.DIRECTORY_PICTURES), "wel_img_one.png");
+                list.add(file);
+                File file1 = new File( Environment.getExternalStoragePublicDirectory(Environment.DIRECTORY_PICTURES), "clock_pic_secretary.jpg");
+                list.add(file1);
+                File file2 = new File( Environment.getExternalStoragePublicDirectory(Environment.DIRECTORY_PICTURES), "msg_icn_daren.png");
+                list.add(file2);
+                RetrofitManager.uploadFile(list, "110", "图片上传");
 
                 break;
         }
