@@ -24,7 +24,7 @@ public class WaterFallActivity extends Activity {
 		mRecyclerView = (RecyclerView) findViewById(R.id.forum_list);
 		// 设置layoutManager
 		// 2代表列数， StaggeredGridLayoutManager.VERTICAL代表垂直分布
-		mRecyclerView.setLayoutManager(new StaggeredGridLayoutManager(3,
+		mRecyclerView.setLayoutManager(new StaggeredGridLayoutManager(2,
 				StaggeredGridLayoutManager.VERTICAL));
 		// 设置adapter
 		initData();

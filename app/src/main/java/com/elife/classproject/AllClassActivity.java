@@ -33,7 +33,7 @@ import com.elife.classproject.palette.PaletteActivity;
 import com.elife.classproject.player.SongListActivity;
 import com.elife.classproject.popup.PopupActivity;
 import com.elife.classproject.project.ProjectActivity;
-import com.elife.classproject.recycler.ForumWaterActivity;
+import com.elife.classproject.recycler.waterfall.WaterFallActivity;
 import com.elife.classproject.service.BindServiceActivity;
 import com.elife.classproject.shape.ShapeActivity;
 import com.elife.classproject.viewinject.InjectTestActivity;
@@ -266,9 +266,9 @@ public class AllClassActivity extends AppCompatActivity implements View.OnClickL
                 intent.setClass(getApplicationContext(), CardViewActivity.class);
                 break;
             case R.id.recycler:
-//                intent.setClass(getApplicationContext(), WaterFallActivity.class);
+                intent.setClass(getApplicationContext(), WaterFallActivity.class);
 //                intent.setClass(getApplicationContext(), ForumMsgActivity.class);
-                intent.setClass(getApplicationContext(), ForumWaterActivity.class);
+//                intent.setClass(getApplicationContext(), ForumWaterActivity.class);
                 break;
             case R.id.project:
                 intent.setClass(getApplicationContext(), ProjectActivity.class);
