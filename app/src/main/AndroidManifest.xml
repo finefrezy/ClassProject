@@ -176,8 +176,9 @@
             </intent-filter>
         </service>
 
-        <activity android:name=".aidl.BankActivity"></activity>
-        <activity android:name=".viewinject.InjectTestActivity"></activity>
+        <activity android:name=".aidl.BankActivity" />
+        <activity android:name=".viewinject.InjectTestActivity" />
+        <activity android:name=".circlemenu.CircleMenuActivity"></activity>
     </application>
 
 </manifest>

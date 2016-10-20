@@ -96,6 +96,10 @@ public interface RetrofitService {
     @POST("/elife/{link}")
     Call<BaseResponse<String>> uploadFilesWithParts(@Path("link") String link, @Part() List<MultipartBody.Part> parts, @Query("userid") String id, @Query("info") String info);
 
+    @POST("/elife/{link}")
+    Call<BaseResponse<String>> uploadFilesWithParts(@Path("link") String link,  @Query("userid") String id, @Query("info") String info);
+
+
     /**
      * okhttp3.MultipartBody: multipart/form-data的抽象封装,继承okhttp3.RequestBody
      okhttp3.MultipartBody.Part: multipart/form-data里的一项数据

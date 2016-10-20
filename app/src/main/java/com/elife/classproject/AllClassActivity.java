@@ -15,6 +15,7 @@ import com.elife.classproject.broadcast.BcReceiver;
 import com.elife.classproject.broadcast.BroadcastActivity;
 import com.elife.classproject.canvas.CanvasActivity;
 import com.elife.classproject.cardview.CardViewActivity;
+import com.elife.classproject.circlemenu.CircleMenuActivity;
 import com.elife.classproject.composite.HomeActivity;
 import com.elife.classproject.contentprovider.VisitCvActivity;
 import com.elife.classproject.dialog.AlertDialgActivity;
@@ -78,6 +79,7 @@ public class AllClassActivity extends AppCompatActivity implements View.OnClickL
     private Button mBdMap;
     private Button mAidl;
     private Button mInject;
+    private Button mCircleMenu;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -109,6 +111,7 @@ public class AllClassActivity extends AppCompatActivity implements View.OnClickL
         mCanvas = (Button) findViewById(R.id.canvas);
         mLogistics = (Button) findViewById(R.id.logistics);
         mInject = (Button) findViewById(R.id.inject);
+        mCircleMenu = (Button) findViewById(R.id.circle);
 
         mDefineView = (Button) findViewById(R.id.self_define_view);
         mEventDispatch = (Button) findViewById(R.id.event_dispatch);
@@ -157,6 +160,7 @@ public class AllClassActivity extends AppCompatActivity implements View.OnClickL
         mBdMap.setOnClickListener(this);
         mAidl.setOnClickListener(this);
         mInject.setOnClickListener(this);
+        mCircleMenu.setOnClickListener(this);
 
 
         //生成广播处理
@@ -281,6 +285,9 @@ public class AllClassActivity extends AppCompatActivity implements View.OnClickL
                 break;
             case R.id.inject:
                 intent.setClass(getApplicationContext(), InjectTestActivity.class);
+                break;
+            case R.id.circle:
+                intent.setClass(getApplicationContext(), CircleMenuActivity.class);
                 break;
         }
 

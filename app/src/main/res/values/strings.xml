@@ -76,6 +76,7 @@
     <string name="open">开户</string>
     <string name="close">销户</string>
     <string name="inject">注解注入</string>
+    <string name="circle">圆形菜单</string>
 
 
 </resources>
